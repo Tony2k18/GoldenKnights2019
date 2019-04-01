@@ -1,0 +1,767 @@
+@charset "UTF-8"
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+    max-width: 1350px;
+}
+
+.row {
+    max-width: 1350px;
+    margin: auto;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+}
+
+h4  {
+    font-size: 2em;
+    margin-bottom: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* For mobile phones: */
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+
+
+/* Story */
+
+h1 {
+    font-size: 8em;
+    margin-top: 5px;
+    line-height: 130px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    margin-bottom: -10px;
+    font-weight: 800;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.intro {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    text-align: left;
+    line-height: 60px;
+}
+
+@media (max-width: 600px) {
+    .intro {
+        font-size: 1.3em;
+        line-height: 40px;
+    }
+
+}
+
+
+.story {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    text-align: left;
+    line-height: 40px;
+
+}
+
+.sub {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
+}
+
+@media (max-width: 600px) {
+    .sub {
+        font-size: 1.5em;
+        line-height: 30px;
+
+    }
+    
+}
+
+.credit {
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;    text-align: center;
+    margin-top: 60px;
+}
+
+.dropcap {
+    height: 133px;
+    width: 151px;
+    background-size: 151px 133px;
+    font-size: 8rem;
+    line-height: 133px;
+    vertical-align: baseline;
+    margin: 0;
+    padding-top: 0;
+}
+
+.intro > span {
+    float: left;
+    width: 0.7em;
+    font-size: 13rem;
+    font-family: 'Merriweather', serif;
+    line-height: 180px;
+    color: #DAA520;
+}
+
+@media (max-width: 600px) {
+    .intro > span {
+    float: left;
+    width: 0.7em;
+    font-size: 1.3em;
+    font-family: 'Merriweather', serif;
+    line-height: 35px;
+    color: black;
+    }
+}
+
+.hkphoto {
+    width: 100%;
+    margin-top: -200px;
+    border-top: 5px solid darkgoldenrod;
+}
+
+@media (max-width: 600px) {
+    .hkphoto {
+    width: 100%;
+    margin-top: -510px;
+    margin-bottom: 110px;
+    border-top: 5px solid darkgoldenrod;
+    }
+}
+
+
+
+/* Graphic box */
+
+.hkgraphic {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+@media (max-width: 600px) {
+    .hkgraphic {
+        display: none;
+    }
+}
+
+.hkgraphicmobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .hkgraphicmobile {
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+
+    }
+}
+
+
+/* For players info boxes */
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: red;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.menu li:hover {
+  background-color: darkred;
+}
+
+
+.infobox {
+    padding: 15px;
+    margin: auto;
+    max-width: 1350px;
+    padding-top: 200px
+}
+
+.teamlogo {
+    width: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .teamlogo {
+    width: 15%;
+    padding-bottom: 5px;
+
+    }
+ }
+
+
+
+.dtlhkstatsmaster {
+    font-size: 2em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .dtlhkstatsmaster {
+    font-size: 1.7em;
+
+    }
+    
+}
+
+
+.playermaster {
+    max-width: 1350px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.aside {
+    padding: 15px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 1.1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    
+}
+
+
+
+.aside > h5 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-collapse: collapse;
+    font-size: 1.7em;
+    text-align: left;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: goldenrod;
+    text-transform: uppercase;
+}
+
+
+h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-collapse: collapse;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.aside > p {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.2em;
+}
+
+
+/* video */
+
+iframe {
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+
+iframe:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+
+
+
+
+
+/* table */
+
+table {
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-collapse: collapse;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 0.65rem;
+    }
+
+}
+
+
+
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 3px;
+}
+
+@media (max-width: 600px) {
+    td {
+        padding: 1px;
+        text-align: center;
+
+    }
+}
+
+
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+
+}
+
+tr:nth-child(odd) {
+    background-color: #eedd82;
+}
+
+.tablehead {
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+/* Knights Profile List */
+
+
+.knights {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+    margin-bottom: 200px;
+
+}
+
+.knightsbox {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+    display: inline-block;
+
+}
+
+#topoflist {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    padding-top: 100px;
+}
+
+.listintro {
+    line-height: 28px;
+    font-size: 23px;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+}
+
+@media (max-width: 600px) {
+    .listintro {
+        font-size: 1em;
+        line-height: 20px;
+    }
+
+}
+
+
+.knightsProfile {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-collapse: separate;
+    margin: auto;
+    padding: 1px;
+    margin-right: 2px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    width: 160px;
+    float: left;
+}
+
+@media (max-width: 600px) {
+    .knightsProfile {
+        width: 100%;
+        border-bottom: 1px solid black;
+        border-right: none;
+        padding-right: 0px;
+
+    }
+ }
+
+
+.imgno {
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-top: -15px;
+    border:1px solid black;
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+    .imgno {
+        float:center;
+        width: 35%
+}
+}
+
+.playername {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5px;
+    color: #A9A9A9;
+    font-family: 'Dorsa', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    line-height: 27px;
+}
+
+@media (max-width: 600px) {
+    .playername {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        line-height: 35px;
+        padding-bottom: 20px;
+
+    }
+}
+
+
+.puck {
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    width: 85%;
+}
+
+@media (max-width: 600px) {
+    .puck {
+        width: 28%;
+        float: right;
+        display: none;
+}
+}
+
+
+.playernumber{
+    font-size: 800%;
+    margin-top: -60px;
+    color: #DAA520;
+    font-family: 'Teko', sans-serif;
+    margin-bottom: -50px;
+}
+
+@media (max-width: 600px) {
+    .playernumber{
+        font-size: 10em;
+        text-align: left;
+        float: left;
+        margin-bottom: -50px;
+        margin-top: -80px;
+        padding-right: 20px;
+}
+}
+
+
+.position {
+    font-size: 1.3rem;
+    margin-bottom: 1px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    color: black;
+    margin-top: 45px;
+}
+
+@media (max-width: 600px) {
+    .position {
+        font-size: 2em;
+        margin-bottom: 50px;
+        margin-top: -25px;
+        margin-left: 175px;
+        text-align: left;
+}
+    }  
+
+
+.playerinfo {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .playerinfo {
+        margin-bottom: 20px;
+        margin-top: -15px;
+    }
+    }  
+
+
+
+.ul {
+
+}
+
+.li {
+    display: block;
+}
+
+.kbold {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .kbold {
+        line-height: 10px;
+
+}
+    }  
+
+
+
+.group1 {
+    font-size: 1.2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 23px;
+    text-align: left;
+    padding-bottom: 5px;
+    margin-left: 5px;
+
+}
+
+@media (max-width: 600px) {
+    .group1 {
+        font-size: 1.2rem;
+        margin-bottom: 1px;
+        text-align: left;
+        line-height: 20px;
+
+}
+    }  
+
+
+.button {
+    background-color: #FF0000;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 1px 1px;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+}
+
+@media (max-width: 600px) {
+    .button {
+        margin-top: 25px;
+        display: block;
+    }
+}  
+
+
+.roster {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    color: goldenrod;
+    margin-bottom: 1px;
+    font-weight: 700;
+    padding-top: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    border-color: snow;
+
+}
+
+@media (max-width: 600px) {
+    .roster {
+    font-size: 1.7em;
+    }
+}  
+
+
+
+.roster2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    color: goldenrod;
+    border-bottom: 1px solid darkgoldenrod;
+    margin-bottom: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+
+}
+
+.roster3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    color: goldenrod;
+    border-bottom: 1px solid darkgoldenrod;
+    margin-bottom: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+
+}
+
+
+
+/* secret divs */
+
+#hideforwards {
+    width: 100%;
+    display: none;
+}
+
+#hidedefense {
+    width: 100%;
+    display: none;
+}
+
+#hidegoalies {
+    width: 100%;
+    display: none;
+}
+
+
+/* social */
+
+.sociallogo {
+    width: 45%;
+    padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .sociallogo {
+    width: 26%;
+    }
+}  
+
+.social {
+
+}
+
+@media (max-width: 600px) {
+    .social {
+    padding-left: 100px;
+   
+    }
+}
+
+.hashtag {
+    width: 100%;
+    border: solid black thin;
+}
